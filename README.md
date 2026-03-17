@@ -7,7 +7,7 @@ The official website for **RSC Single Player** — a fully self-contained RuneSc
 ## Downloads
 
 | Platform | Version | Link |
-|----------|---------|------|
+| --- | --- | --- |
 | **Desktop** (Windows/macOS/Linux) | v2.4.6 | [Single-RSC-v2.4.6.zip](https://github.com/theKennethy/Single-RSC/releases/download/v2.4.6/Single-RSC-v2.4.6.zip) |
 | **Mobile** (Android 7.0+) | v2.5.3 | [Single-RSC.apk](https://github.com/theKennethy/SingleRSC-Mobile/releases/download/v2.5.3/Single-RSC.apk) |
 
@@ -16,6 +16,7 @@ The official website for **RSC Single Player** — a fully self-contained RuneSc
 ## Features
 
 ### Core
+
 - 100% single-process design — no external DB, server, or internet required
 - All core content including all 50 quests
 - 18-skill bot system with auto-banking and combat support
@@ -28,6 +29,7 @@ The official website for **RSC Single Player** — a fully self-contained RuneSc
 - Hardcore mode — death permanently deletes your save
 
 ### Quality of Life
+
 - `::bank` — open bank from anywhere
 - `::tele <area>` — teleport to named locations or coordinates
 - `::stuck` — unstick your character
@@ -60,7 +62,7 @@ Or: `java -cp "rsc.jar:lib/*" org.nemotech.rsc.Main`
 ## Mobile Touch Controls
 
 | Gesture | Action |
-|---------|--------|
+| --- | --- |
 | Tap | Left click (walk, interact, select) |
 | Long press | Right click (context menu, examine) |
 | Double tap | Toggle on-screen keyboard |
@@ -74,7 +76,7 @@ Or: `java -cp "rsc.jar:lib/*" org.nemotech.rsc.Main`
 ### Player Commands
 
 | Command | Description |
-|---------|-------------|
+| --- | --- |
 | `::help` | Show help message |
 | `::bank` | Open bank anywhere |
 | `::stuck` | Unstick your character |
@@ -85,7 +87,7 @@ Or: `java -cp "rsc.jar:lib/*" org.nemotech.rsc.Main`
 ### Admin Commands (user: `root`)
 
 | Command | Description |
-|---------|-------------|
+| --- | --- |
 | `::tele <location>` | Teleport to a named location |
 | `::tele <x> <y>` | Teleport to coordinates |
 | `::item <id> [amount]` | Spawn an item |
@@ -109,7 +111,7 @@ A built-in bot framework that automates training for all 18 skills. Bots handle 
 ### Bot Management
 
 | Command | Description |
-|---------|-------------|
+| --- | --- |
 | `::bot list` | List all registered bots |
 | `::bot start <name>` | Start a bot by name |
 | `::bot stop [name]` | Stop a bot (or all bots) |
@@ -119,7 +121,7 @@ A built-in bot framework that automates training for all 18 skills. Bots handle 
 ### Gathering Bots
 
 | Command | Skill | Types |
-|---------|-------|-------|
+| --- | --- | --- |
 | `::woodcut [type]` | Woodcutting | normal, oak, willow, maple, yew, magic |
 | `::fish [type]` | Fishing | net, fly, cage, harpoon, shark |
 | `::mine [type]` | Mining | copper, tin, iron, coal, gold, mith, addy, rune |
@@ -127,7 +129,7 @@ A built-in bot framework that automates training for all 18 skills. Bots handle 
 ### Combat Bots
 
 | Command | Skill | Details |
-|---------|-------|---------|
+| --- | --- | --- |
 | `::combat [npc]` | Attack/Strength/Defence | Melee combat with auto-looting |
 | `::ranged [npc]` | Ranged | Ranged combat training |
 | `::magic [npc]` | Magic | Casts combat spells on NPCs |
@@ -135,7 +137,7 @@ A built-in bot framework that automates training for all 18 skills. Bots handle 
 ### Production Bots
 
 | Command | Skill | Details |
-|---------|-------|---------|
+| --- | --- | --- |
 | `::cook` | Cooking | Cooks raw food on ranges |
 | `::fm` | Firemaking | Burns logs with tinderbox |
 | `::smith` | Smithing | Smiths bars at anvils |
@@ -146,12 +148,13 @@ A built-in bot framework that automates training for all 18 skills. Bots handle 
 ### Support Bots
 
 | Command | Skill | Details |
-|---------|-------|---------|
+| --- | --- | --- |
 | `::agility [course]` | Agility | gnome, barb, wild |
 | `::thieve [target]` | Thieving | Pickpockets NPCs |
 | `::prayer` | Prayer | Buries bones from inventory |
 
 ### Bot Behavior
+
 - **Auto-banking** — gathering bots walk to the nearest bank when inventory is full
 - **Auto-eating** — combat bots eat food when HP drops low
 - **Clean shutdown** — bots stop when out of supplies or after repeated banking failures
@@ -159,7 +162,7 @@ A built-in bot framework that automates training for all 18 skills. Bots handle 
 
 ### Examples
 
-```
+```text
 ::woodcut willow       Cut willow trees, bank logs
 ::fish lobster         Catch lobsters, bank them
 ::mine iron            Mine iron ore, bank it
@@ -248,7 +251,7 @@ A: Yes — all bot commands work identically to desktop.
 
 ## Website Structure
 
-```
+```text
 .
 ├── index.html      # Main page
 ├── styles.css      # Styling
